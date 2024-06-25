@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-commerce</title>
+    <link rel="stylesheet" href="style.css">
+   
+    <script src="https://kit.fontawesome.com/d5a4a26e6b.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+    <nav>
+    <div class="logo">E-COMMERCE</div>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Offers</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+       
+       <i class="fa-solid fa-cart-shopping"></i> 
+    </ul>
+    </nav>
+ <div class="flex-box">
+    <div class="left">
+        <div class="big-img">
+            <img src="navy-blue.webp">
+        </div>
+        <div class="images">
+            <div class="small-img">
+                <img src="white.jpeg" onclick="showImg(this.src);">
+            </div>
+            <div class="small-img">
+                <img src="black.webp" onclick="showImg(this.src);">
+            </div>
+            <div class="small-img">
+                <img src="olive green.webp"onclick="showImg(this.src);">
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="url">Home > Product > T-Shirt</div>
+        <br>
+        <div class="pname">T-shirt for Men</div>
+        <br>
+        <div class="ratings">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <div class="price">400₹</div>
+        <div class="size">
+            <p> Size :</p>
+            <div class="psize active">S</div>
+            <div class="psize">M</div>
+            <div class="psize">L</div>
+            <div class="psize">XL</div>
+        </div>
+        <br>
+        <div class="quantity">
+        <p>Quantity :</p>
+        <input type="number" min="1" max="5" value="1">
+        </div>
+        <div class="btn-box">
+            <button class="cart-btn">Add to Cart</button>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+    </div>
+    
+ </div>
+       <script>
+        let bigImg= document.querySelector('.big-img img')
+        function showImg(pic){
+            bigImg.src=pic;
+        }
+       </script>
+</body>
+</html>
